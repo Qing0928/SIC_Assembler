@@ -53,7 +53,7 @@ with open('source.txt', 'r') as f:
  					loctr += int(code[len(code)-1])
  				elif 'BYTE' in code:
  					floc.write("{:X}".format(loctr) + '\t' + line)
- 					loctr_num = code[len(code)-1].split('\'')
+ 					loctr_ = code[len(code)-1].split('\'')
  					if loctr_add[0] == 'C':
  						loctr += len(loctr_add[1])
  					elif loctr_add[0] == 'X':
